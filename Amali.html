@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Amali.css">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .welcome-title {
+      animation: fadeIn 2s;
+    }
+  </style>
+  <img src="library.png" alt="Logo" class="logo"> <!-- Logo in the admin page -->
+  <title>Selamat Datang Ke Sistem E-Library Kolej Kemahiran Bitara</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="welcome-title">Sistem E-Library</h1>
+    <h1 class="welcome-title">Kolej Kemahiran Bitara</h1>
+    <div class="buttons">
+      <button onclick="showUserForm()">Pengguna</button>
+      <button onclick="showLogin()">Pentadbir</button>
+    </div>
+  </div>
+
+  <div class="container" id="adminSection" style="display: none;">
+    <h1>Halaman Pentadbir</h1>
+    <form id="adminForm">
+      <label for="idBuku">ID Buku:</label>
+      <input type="text" id="idBuku" name="idBuku" required>
+
+      <label for="judulBuku">Judul Buku:</label>
+      <input type="text" id="judulBuku" name="judulBuku" required>
+
+      <label for="pengarang">Pengarang:</label>
+      <input type="text" id="pengarang" name="pengarang" required>
+
+      <label for="penerbit">Penerbit:</label>
+      <input type="text" id="penerbit" name="penerbit" required>
+
+      <label for="tahunTerbitan">Tahun Terbitan:</label>
+      <input type="text" id="tahunTerbitan" name="tahunTerbitan" required>
+
+      <label for="kategoriBuku">Kategori Buku:</label>
+      <input type="text" id="kategoriBuku" name="kategoriBuku" required>
+
+      <button type="button" onclick="addRecord()">Tambah rekod</button>
+      <button type="button" onclick="saveRecord()">Simpan rekod</button>
+      <button type="button" onclick="deleteRecord()">Padam rekod</button>
+      <button type="button" onclick="searchRecord()">Carian rekod</button>
+    </form>
+  </div>
+
+  <!-- Login form container -->
+  <div class="container" id="loginContainer" style="display: none;">
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="login(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script src="Amali.js"></script>
+</body>
+</html>

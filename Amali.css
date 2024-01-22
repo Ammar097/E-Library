@@ -1,0 +1,95 @@
+/* Style for the logo */
+.logo {
+  width: 350px; /* Adjust the width as needed */
+  height: auto;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #003366, #336699);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px; /* Increased max-width */
+  font-size: 30px;
+  margin: 100px auto; /* Adjusted margin */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px; /* Increased padding */
+  border-radius: 10px; /* Increased border-radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 55px; /* Increased font size */
+  color: #4CAF50;
+}
+
+.buttons {
+  margin-top: 50px; /* Adjusted margin-top */
+}
+
+button {
+  padding: 20px; /* Increased padding */
+  margin: 30px;
+  font-size: 40px; /* Increased font size */
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Increased border-radius */
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#adminSection {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 50px; /* Increased padding */
+  border-radius: 10px; /* Increased border-radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  
+  margin-top: 60px; /* Adjusted margin-top */
+}
+
+input {
+  padding: 20px; /* Increased padding */
+  margin: 20px 0px; /* Adjusted margin */
+  width: 100%;
+  font-size: 40px; /* Increased font size */
+  box-sizing: border-box;
+  border: 2px solid #4CAF50;
+  border-radius: 12px; /* Increased border-radius */
+}
+
+button[type="button"] {
+  background-color: #3498db;
+}
+
+button[type="button"]:hover {
+  background-color: #2980b9;
+}
+
+#loginContainer {
+  margin-top: 70px; /* Adjusted margin-top */
+}
+
+#additionalPage {
+  margin-top: 70px; /* Adjusted margin-top */
+}
